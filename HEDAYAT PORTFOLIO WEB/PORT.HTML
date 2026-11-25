@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Md Hedayatullah</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2e0a1f6d6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="brand" onclick="scrollToTop()">
+                <div class="logo">NOOR</div>
+                <div>
+                    <h1>Md Hedayatullah</h1>
+                    <p>BCA • Coder • Student </p>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="btn" onclick="scrollToSection('projects')">Projects</button>
+                <button class="btn" onclick="scrollToSection('contact')">Contact</button>
+                <button class="btn" id="themeBtn" onclick="pulseAccent()">🎨</button>
+            </div>
+        </header>
+
+        <section class="hero card">
+            <div class="hero-inner">
+                <h2 class="title">Hi — I'm <span style="font-weight:900">Md Hedayatullah</span></h2>
+                <p class="subtitle">Professional portfolio for BCA students & CODE learners.</p>
+
+                <div class="cta-row">
+                    <button class="primary" onclick="scrollToSection('contact')">Get in touch</button>
+                    <button class="ghost" onclick="scrollToSection('projects')">See projects</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid">
+            <!-- LEFT PROFILE -->
+            <aside class="card profile">
+                <div class="avatar">MH</div>
+                <h3 class="name">md Hedayatullah</h3>
+                <p class="role">Student • Web Devloper </p>
+                <div class="address-box">
+                    <small>Address</small>
+                    <p>Vill+Post-Khirma • Ps-Keoti • <br> Dist-Darbhang • State-Bihar • National-India</p>
+                </div>
+
+                <div class="socials">
+                    <a class="btn"><i class="fa fa-github"></i></a>
+                    <a class="btn"><i class="fa fa-linkedin"></i></a>
+                    <a class="btn"><i class="fa fa-youtube"></i></a>
+                </div>
+            </aside>
+
+            <!-- RIGHT CONTENT -->
+            <main class="card main-col">
+                <h3>About</h3>
+                <p class="text-muted">I am a BCA student and coder learning C, DSA, HTML, CSS, JavaScript and building
+                 practical projects.</p>
+
+                <h3>Skills</h3>
+                <div class="skills">
+                    <span class="skill">C Programming</span>
+                    <span class="skill">DSA</span>
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                  
+                </div>
+
+                <section id="projects">
+                    <h3>Projects</h3>
+                    <div class="projects">
+                        <div class="project">
+                            <h4>DSA Learning Hub</h4>
+                            <p>Interactive learning page for C and DSA.</p>
+                        </div>
+                        <div class="project">
+                            <h4>Portfolio Template</h4>
+                            <p>Colorful and responsive portfolio layout.</p>
+                        </div>
+                        <div class="project">
+                            <h4>Algorithm Visualizer</h4>
+                            <p>Sorting & graph animations for students.</p>
+                        </div>
+                        <div class="project">
+                            <h4>Mini Blog</h4>
+                            <p>C programming exam notes & tips.</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section id="contact" class="card">
+            <h3>Contact</h3>
+            <form id="contactForm" onsubmit="handleSend(event)">
+                <div class="contact-grid">
+                    <input class="input" id="name" required placeholder="Your Name">
+                    <input class="input" id="email" required type="email" placeholder="Email">
+                    <input class="input" id="subject" placeholder="Subject">
+                    <textarea id="message" required placeholder="Message..."></textarea>
+                </div>
+                <button class="primary" type="submit">Send</button>
+            </form>
+
+            <div id="preview" class="preview"></div>
+        </section>
+
+        <footer>
+            © <b>md Hedayatullah</b> — Vill+Post Khirma, Ps-Keoti, Dist-Darbhanga, Bihar
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
